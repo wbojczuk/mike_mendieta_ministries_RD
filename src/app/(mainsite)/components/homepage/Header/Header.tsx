@@ -12,7 +12,7 @@ return (
 
  
    <img src='/img/header-bg.png' alt='Image of People Praising' className='bg-img' />
-   <div className='shader'></div>
+   <div style={{backgroundColor: "rgba(0,0,0,0.6)"}} className='shader'></div>
  </header> 
   
 )};
