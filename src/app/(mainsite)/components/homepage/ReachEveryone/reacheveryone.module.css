@@ -6,6 +6,8 @@
     justify-content: center;
     flex-direction: column;
     gap: 4vw;
+    border-left: 5vw solid var(--primary-color);
+    border-right: 5vw solid var(--primary-color);
 }
 
 .reachEveryone h2{
