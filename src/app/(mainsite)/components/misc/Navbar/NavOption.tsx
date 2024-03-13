@@ -7,14 +7,15 @@ interface optionProps {
     ref: any,
     url: string
     icon?: ReactNode,
-    title: string
+    title: string,
+    target?: string
 }
 
  const NavOption = forwardRef((props: optionProps, parentRef)=>{
 
   return (
     //@ts-ignore
-    <Link ref={parentRef} href={props.url} className={styles.navLink}>
+    <Link target={(props.target != undefined) ? props.target : "_self"} ref={parentRef} href={props.url} className={styles.navLink}>
               <li>
                 {(props.icon !== undefined) ? props.icon : <span className={styles.noIcon}></span>}
                 <span>{props.title}</span>

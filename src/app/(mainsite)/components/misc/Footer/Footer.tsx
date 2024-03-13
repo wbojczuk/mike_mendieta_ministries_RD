@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.content}>
 
-        <Image src="/img/logo.png" width={512} height={512} className={styles.logo} alt="Main Logo"/>
+        <span className={styles.logoText}>Mike Mendieta Ministries</span>
 
         <div className={styles.links}>
           <aside>
@@ -21,7 +21,7 @@ export default function Footer() {
                   <Link href="/">Home</Link>
                 </li>
                 <li className={styles.listItem}>
-                  <Link href="/about">About</Link>
+                  <Link target="_blank" href="https://www.facebook.com/amenamen.amen.58">Watch</Link>
                 </li>
                 <li className={styles.listItem}>
                   <Link href="/contact">Contact</Link>
@@ -34,9 +34,9 @@ export default function Footer() {
               <h3 className={styles.listTitle}>Categories</h3>
               <ul className={styles.list}>
 
-                <span className={styles.listItem}>Category</span>
-                <span className={styles.listItem}>Category</span>
-                <span className={styles.listItem}>Category</span>
+                <span className={styles.listItem}>Deliverance</span>
+                <span className={styles.listItem}>Salvation</span>
+                <span className={styles.listItem}>Restoration</span>
               
               </ul>
             </aside>
@@ -57,7 +57,7 @@ export default function Footer() {
                 
                 <aside className={`${styles.contactItem} ${styles.listItem}`}>
                 <InlineIcon icon={"mdi:map-marker"} width="50px" height="50px" />
-                  <a href="https://google.com" target="_blank">{process.env.NEXT_PUBLIC_BUSINESS_CITY_STATE}</a>
+                  <a href="https://maps.app.goo.gl/aJ4HT8Gcqe5AYoha8" target="_blank">{process.env.NEXT_PUBLIC_BUSINESS_CITY_STATE}</a>
                 </aside>
 
               </ul>
