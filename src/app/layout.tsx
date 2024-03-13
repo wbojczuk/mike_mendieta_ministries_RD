@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import { Nunito, Roboto } from 'next/font/google'
+import { Poppins, Lora } from 'next/font/google'
 import Footer from './(mainsite)/components/misc/Footer/Footer';
 import Navbar from './(mainsite)/components/misc/Navbar/Navbar';
 import Script from 'next/script';
@@ -16,8 +16,8 @@ import Script from 'next/script';
 import "./(mainsite)/components/styling_sheets/links/mainlink.css"
 
 
-const primaryFont = Roboto({ subsets: ['latin'], weight: ["100", "300", "400", "500", "900"], display: "swap", variable: "--primary-font" })
-const secondaryFont = Nunito({ subsets: ['latin'], weight: ["200", "300", "400", "500", "600", "700", "800"], display: "swap", variable: "--secondary-font" })
+const primaryFont = Poppins({ subsets: ['latin'], weight: ["100", "300", "400", "500", "900"], display: "swap", variable: "--primary-font" })
+const secondaryFont = Lora({ subsets: ['latin'], weight: ["400", "500", "600", "700"], display: "swap", variable: "--secondary-font" })
 
 export const metadata: Metadata = {
   title: 'Mike Mendieta Ministries',

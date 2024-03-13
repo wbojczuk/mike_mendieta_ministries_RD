@@ -66,14 +66,18 @@ export default function Navbar() {
     const isOnTouch = window.matchMedia("(max-width: 990px)").matches
     setIsOnTouch(isOnTouch)
     setIsOnMobile(window.matchMedia("(max-width: 649px)").matches)
+    
+    if(window.scrollY > 10){
+      navRef.current.style.backgroundColor = "black"
+    }else{
+      navRef.current.style.backgroundColor = "transparent"
+    }
 
     window.addEventListener("scroll", ()=>{
       if(window.scrollY > 10){
-        const topbarStyles = window.getComputedStyle(topBarRef.current)
-        const topAmt = parseFloat(topbarStyles.height) + parseFloat(topbarStyles.paddingTop) + parseFloat(topbarStyles.paddingBottom)
-        navRef.current.style.transform = `translateY(-${topAmt}px)`
+        navRef.current.style.backgroundColor = "black"
       }else{
-        navRef.current.style.transform = "translateY(0)"
+        navRef.current.style.backgroundColor = "transparent"
       }
     })
 
@@ -99,13 +103,13 @@ export default function Navbar() {
   function closeMenu(){
     setMenuOpen(false)
     hamburgerRef.current.classList.remove("is-active")
-    contentRef.current.style.transform =  "scaleX(0)"
+    contentRef.current.style.transform =  "scaleY(0)"
   }
 
   function openMenu(){
     setMenuOpen(true)
     hamburgerRef.current.classList.add("is-active")
-    contentRef.current.style.transform =  "scaleX(1)"
+    contentRef.current.style.transform =  "scaleY(1)"
   }
   
   const hamburgerClass = "hamburger--collapse"

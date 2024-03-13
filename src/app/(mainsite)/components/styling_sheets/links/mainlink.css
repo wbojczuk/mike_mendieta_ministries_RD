@@ -1,16 +1,17 @@
 .main-link{
   font-family: var(--primary-font);
-  font-weight: 700;
-  background-color: var(--primary-color-2);
+  font-weight: 500;
+  background-color: var(--primary-color);
   font-size: 1.5rem;
   padding: 0.6vw 3.5vw;
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
   text-decoration: none;
   overflow: hidden;
   position: relative;
   cursor: pointer;
   display: inline-block;
   border: none;
+  border-radius: 5px;
 }
 
 .main-link::after{

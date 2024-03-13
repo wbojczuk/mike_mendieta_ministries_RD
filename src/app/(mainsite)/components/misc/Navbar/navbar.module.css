@@ -3,10 +3,10 @@
     top:0;
     left:0;
     width: 100%;
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
     z-index: 998;
     /* box-shadow: 0px 2px 4px rgba(0,0,0,0.3); */
-    transition: 0.5s transform;
+    transition: 0.5s background-color;
     
 }
 
@@ -167,7 +167,7 @@
     top: 100%;
     left:0;
     min-width: 12vw;
-    background-color: white;
+    background-color: black;
     border-top: 2px solid var(--primary-color);
     box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
     transform-origin: top;
@@ -377,7 +377,7 @@
         top: 100%;
         left:0;
         min-width: 12vw;
-        background-color: white;
+        background-color: black;
         border-top: none;
         box-shadow:none;
         transform-origin: top;
@@ -393,7 +393,7 @@
     }
     
     .dropdownLink ul a{
-        background-color: white;
+        background-color: black;
         display: block;
         padding: 1.5vw;
         transition: background-color 0.3s;

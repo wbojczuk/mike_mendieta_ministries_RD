@@ -1,0 +1,50 @@
+.reachEveryone{
+    position: relative;
+    padding: var(--section-padding-top) 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4vw;
+}
+
+.reachEveryone h2{
+    font-size: 4rem;
+}
+
+.reachEveryone p{
+    width: 40%;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    .reachEveryone{
+        gap: 5vw;
+    }
+
+    .reachEveryone p{
+        width: 60%;
+        font-size: 1.8rem;
+    }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    .reachEveryone h2{
+        width: 80%;
+        text-align: center;
+        font-size:5rem;
+        line-height: 140%;
+
+    }
+    .reachEveryone{
+        gap: 6vw;
+    }
+
+    .reachEveryone p{
+        width: 85%;
+        font-size: 2rem;
+    }
+}

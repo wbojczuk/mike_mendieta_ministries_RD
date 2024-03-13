@@ -12,7 +12,7 @@
 
 :root{
   --primary-color: #9572CA;
-  --primary-color-dark: #BE9AF5;
+  --primary-color-light: #BE9AF5;
   --primary-color-2: #FF2222;
   --secondary-color: #F6F6F6;
   --third-color: #F6F6F6;
@@ -36,7 +36,7 @@
 body{
   font-family: var(--primary-font);
   color: var(--primary-text-color);
-  padding-top: 5vw;
+  /* padding-top: 5vw; */
 }
 
 .bg-img{
@@ -59,6 +59,25 @@ body{
   height: 100%;
   z-index: -1;
   background-color: rgba(0,0,0,0.45);
+}
+
+.highlight{
+  color: var(--primary-color-light);
+}
+
+.underline{
+  position: relative;
+}
+
+.underline::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 102%;
+  left:0;
+  height: 8px;
+  width: 100%;
+  background-color: var(--primary-color);
 }
 
 .center{
@@ -111,7 +130,7 @@ body::-webkit-scrollbar-track {
 /* TABLET STYLES */
 @media only screen and (min-width: 650px) and (max-width: 990px){
   body{
-    padding-top: 8vw;
+    /* padding-top: 8vw; */
   }
   :root{
     font-size: 12px;
@@ -127,7 +146,7 @@ body::-webkit-scrollbar-track {
 /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
   body{
-    padding-top: 15vw;
+    /* padding-top: 15vw; */
   }
   :root{
     font-size: 10px;
