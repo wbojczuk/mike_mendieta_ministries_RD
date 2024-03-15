@@ -9,7 +9,7 @@ return (
     <p>We believe that God transforms lives, new life is given, miracles, liberations, healings, and life transformation.
 </p>
  
-    <img src='/img/header-bg.png' alt='Image of ' className='bg-img' />
+    <img src='/img/header-bg.webp' alt='Image of ' className='bg-img' />
     <div style={{backgroundColor: "rgba(0,0,0,0.55)"}} className='shader'></div>
  </div>
 )};

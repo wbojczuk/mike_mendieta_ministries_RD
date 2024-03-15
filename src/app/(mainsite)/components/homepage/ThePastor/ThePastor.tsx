@@ -5,7 +5,7 @@ export default function ThePastor() {
   return (
     <section className={styles.section}>
         <div className={styles.imgWrapper}>
-            <img className={styles.img} src="/img/pastor.png" width={360} height={600} alt="Image of Pastor Mike" />
+            <img className={styles.img} src="/img/pastor.webp" width={360} height={600} alt="Image of Pastor Mike" />
         </div>
         
 

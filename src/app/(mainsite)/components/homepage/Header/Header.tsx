@@ -11,7 +11,7 @@ return (
     </div>
 
  
-   <img src='/img/header-bg.png' alt='Image of People Praising' className='bg-img' />
+   <img src='/img/header-bg.webp' alt='Image of People Praising' className='bg-img' />
    <div style={{backgroundColor: "rgba(0,0,0,0.6)"}} className='shader'></div>
  </header> 
   
